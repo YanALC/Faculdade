@@ -1,0 +1,165 @@
+Nº de indivíduos: 56
+Posições por indivíduo (NIR E/D): 10
+Amostras por fotos: 5
+Total de fotos: 2800
+Total de amostras de cada posição: 280
+
+
+**ANÁLISE**
+Amostras para treinamento: 3
+Amostras para teste: 2
+Total de fotos de treinamento: 168
+Total de fotos de teste: 112
+
+- Distância Euclidiana
+
+=direita
+Região: "02_R_N_H_BH_"
+Fotos de teste reconhecidas: 107 
+Percentual de acerto: 95.54
+
+Região: "04_R_N_H_P_"
+Fotos de teste reconhecidas: 102 
+Percentual de acerto: 91.07
+
+Região: "06_R_N_L_BH_"
+Fotos de teste reconhecidas: 106 
+Percentual de acerto: 94.64
+
+Região: "08_R_N_L_P_"
+Fotos de teste reconhecidas: 102
+Percentual de acerto: 91.07
+
+Região: "09_R_N_L_W_"
+Fotos de teste reconhecidas: 100 
+Percentual de acerto: 89.29
+
+=esquerda
+Região: "12_L_N_H_BH_"
+Fotos de teste reconhecidas: 102 
+Percentual de acerto: 91.07
+
+Região: "14_L_N_H_P_"
+Fotos de teste reconhecidas: 102
+Percentual de acerto: 91.07
+
+Região: "16_L_N_L_BH_"
+Fotos de teste reconhecidas: 110
+Percentual de acerto: 98.21
+
+Região: "18_L_N_L_P_"
+Fotos de teste reconhecidas: 109 
+Percentual de acerto: 97.32
+
+Região: "19_L_N_L_W_"
+Fotos de teste reconhecidas: 102
+Percentual de acerto: 91.07
+
+
+- KNN (Cluster de 3 vizinhos) Distância: euclidiana
+
+=direita
+Região: "02_R_N_H_BH_"
+Fotos de teste reconhecidas: 105 
+Percentual de acerto: 93.75
+
+Região: "04_R_N_H_P_"
+Fotos de teste reconhecidas: 100 
+Percentual de acerto: 89.29
+
+Região: "06_R_N_L_BH_"
+Fotos de teste reconhecidas: 100 
+Percentual de acerto: 89.29
+
+Região: "08_R_N_L_P_"
+Fotos de teste reconhecidas: 98 
+Percentual de acerto: 87.50
+
+Região: "09_R_N_L_W_"
+Fotos de teste reconhecidas: 91 
+Percentual de acerto: 81.25
+
+=esquerda
+Região: "12_L_N_H_BH_"
+Fotos de teste reconhecidas: 102 
+Percentual de acerto: 91.07
+
+Região: "14_L_N_H_P_"
+Fotos de teste reconhecidas: 98 
+Percentual de acerto: 87.50
+
+Região: "16_L_N_L_BH_"
+Fotos de teste reconhecidas: 104 
+Percentual de acerto: 92.86
+
+Região: "18_L_N_L_P_"
+Fotos de teste reconhecidas: 104 
+Percentual de acerto: 92.86
+
+Região: "19_L_N_L_W_"
+Fotos de teste reconhecidas: 90 
+Percentual de acerto: 80.36
+
+- KNN com parâmetros automáticos
+
+=direita
+Região: "02_R_N_H_BH_"
+Distância: cityblock
+Nº vizinhos: 1
+Fotos de teste reconhecidas: 108 
+Percentual de acerto: 96.43
+
+Região: "04_R_N_H_P_"
+Distância: cityblock
+Nº vizinhos: 1
+Fotos de teste reconhecidas: 103 
+Percentual de acerto: 91.96
+
+Região: "06_R_N_L_BH_"
+Distância: cityblock
+Nº vizinhos: 1
+Fotos de teste reconhecidas: 109 
+Percentual de acerto: 97.32
+
+Região: "08_R_N_L_P_"
+Distância: euclidean
+Nº vizinhos: 1
+Fotos de teste reconhecidas: 102 
+Percentual de acerto: 91.07
+
+Região: "09_R_N_L_W_"
+Distância: cityblock
+Nº vizinhos: 1
+Fotos de teste reconhecidas: 103 
+Percentual de acerto: 91.96
+
+=esquerda
+Região: "12_L_N_H_BH_"
+Distância: cityblock
+Nº vizinhos: 1
+Fotos de teste reconhecidas: 103 
+Percentual de acerto: 91.96
+
+Região: "14_L_N_H_P_"
+Distância: cityblock
+Nº vizinhos: 2
+Fotos de teste reconhecidas: 102 
+Percentual de acerto: 91.07
+
+Região: "16_L_N_L_BH_"
+Distância: minkowski
+Nº vizinhos: 1
+Fotos de teste reconhecidas: 110 
+Percentual de acerto: 98.21
+
+Região: "18_L_N_L_P_"
+Distância: cityblock
+Nº vizinhos: 1
+Fotos de teste reconhecidas: 108 
+Percentual de acerto: 96.43
+
+Região: "19_L_N_L_W_"
+Distância: cityblock
+Nº vizinhos: 1
+Fotos de teste reconhecidas: 104
+Percentual de acerto: 92.86

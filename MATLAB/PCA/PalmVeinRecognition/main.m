@@ -18,7 +18,7 @@ clc;
 ind=56; %qtd de individuos
 amostras=5; %qtd de amostras por foto
 dim=[768 1024]; %dimensão das imagens
-caminho = 'PalmVeinRecognition'; %caminho da aplicação
+caminho = 'C:\Users\YanAL\Desktop\IC\'; %caminho da aplicação
 treino=3; %qtd de amostras para treino
 
 %% Análise
@@ -30,8 +30,8 @@ while(op~=0)
 
     %% PCA
     media = mean(data);
-    s = std(normData,0,1);
-    normData=normalize(normData); %normaliza os dados através do desvio padrão
+    s = std(data,0,1);
+    normData=normalize(data); %normaliza os dados através do desvio padrão
     [Y,coef,varPerc] = PCA(normData');
     projData = normData*Y;
     % Y=PCs de data'
@@ -71,7 +71,7 @@ while(op~=0)
 					x = im2double(imread(strcat(caminho,'base\',num2str(i),'\',reg,num2str(j),'.tif')));
 					y = ProjetarAmostra(x,media,s,Y);
                     %d(k) = Classificar(projData,y);
-                    %id(k) = Identificar(d(k),ind,amostras,teste);
+                    %id(k) = Identificar(d(k),ind,treino);
 					id(k) = predict(Mdl,y);
                     if id(k)~=i
 					   rate=rate-1;
@@ -84,6 +84,7 @@ while(op~=0)
             perc=(double(rate)/double(teste*ind))*100.0;
             %formatSpec = '\nFotos de teste: %2.2i \nFotos de teste reconhecidas: %2.2i \nPercentual de acerto: %2.2f%\n';
             %fprintf(formatSpec,teste*ind,rate,perc);
+            disp(strcat('Distância: ',Mdl.Distance));
             formatSpec = 'Fotos de teste reconhecidas: %2.2i \nPercentual de acerto: %2.2f%\n';
             fprintf(formatSpec,rate,perc);
     end

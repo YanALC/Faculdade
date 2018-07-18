@@ -1,4 +1,4 @@
-%% FunÃ§Ã£o para ler as imagens e salvar em uma matriz de forma que cada linha seja uma imagem
+%% Função para ler as imagens e salvar em uma matriz de forma que cada linha seja uma imagem
 function z = lerImgs(caminho,ind,treino,reg)
 z = zeros(ind*treino,1024*768);
 cont=1;

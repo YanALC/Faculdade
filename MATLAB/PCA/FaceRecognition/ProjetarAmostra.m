@@ -1,15 +1,14 @@
 %Projeta uma nova amostra no espaço das PCs
 %Entrada:
 %   x = amostra a ser projetada
-%   mn = média de cada coluna da matriz de dados
-%   s = desvio padrão de cada coluna
+%   media = média de cada coluna da matriz de dados
+%   std = desvio padrão de cada coluna
 %   coef = autovetores
 %Saída:
 %   y = amostra no novo espaço vetorial
-function y = ProjetarAmostra(x,mn,mn2,s,Y)
+function y = ProjetarAmostra(x,media,std,Y)
 y = x(:)';
-y=y-mn;
-y=y-mn2;
-y=y./s;
+y=y-media;
+y=y./std;
 y=y*Y;
 end

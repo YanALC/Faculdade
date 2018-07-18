@@ -1,3 +1,4 @@
+%% Função ppara normalizar os dados através do desvio padrão (Z-score)
 function stdData = normalizar(data)
 	[M,N] = size(data);
 	media = mean(data); % Média de cada coluna

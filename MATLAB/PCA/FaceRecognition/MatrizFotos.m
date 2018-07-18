@@ -1,3 +1,4 @@
+%% Função para formar uma só imagem de um banco de imagens
 function raw = MatrizFotos(mat,ind,num,dim)
 raw=zeros(dim(1)*ind,dim(2)*num);
 i=0:dim(1):(dim(1)*ind);
